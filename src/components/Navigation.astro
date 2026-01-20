@@ -1,5 +1,5 @@
 ---
-// Navigation component with better layout and visual separation
+// Navigation component with logo and better visual separation
 ---
 
 <nav class="bg-gradient-to-b from-white to-bg-primary border-b border-gray-300 sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
@@ -60,6 +60,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <a href="/others" class="text-text-primary hover:text-accent font-semibold text-[15px] transition-colors relative group">
+                        Others
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full"></span>
+                    </a>
 
                     <a href="/about" class="text-text-primary hover:text-accent font-semibold text-[15px] transition-colors relative group">
                         About Us
@@ -122,6 +127,10 @@
                     </a>
                 </div>
             </div>
+
+            <a href="/others" class="block text-text-primary hover:text-accent hover:bg-bg-secondary font-semibold py-3 px-4 rounded-lg transition-colors">
+                Others
+            </a>
 
             <a href="/about" class="block text-text-primary hover:text-accent hover:bg-bg-secondary font-semibold py-3 px-4 rounded-lg transition-colors">
                 About Us
