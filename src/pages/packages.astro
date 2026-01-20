@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+---
+
+<Layout title="Internet Plans - FiberCloudBD">
+    <Navigation />
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="relative overflow-visible bg-bg-secondary py-14 md:py-18">
+
+            <!-- Dotted Pattern Background -->
+            <div class="absolute inset-0 opacity-40">
+                <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, rgb(217, 118, 66) 1px, transparent 0); background-size: 30px 30px;"></div>
+            </div>
+
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- 50/50 Layout -->
+                <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+
+                    <!-- LEFT: Text -->
+                    <div class="flex-1 w-full">
+
+                      <!--  <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight tracking-tight">
+                            Introducing internet plans designed for your lifestyle.
+                        </h1>  -->
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                            <span class="text-text-primary">Introducing internet plans</span>
+                            <span class="text-accent block">designed for your lifestyle.</span>
+                        </h1>
+
+                        <p class="text-base md:text-lg lg:text-xl text-gray-700 font-medium leading-relaxed">
+                        Fast, stable, and affordable broadband designed for homes, professionals, and enterprises across Bangladesh.
+                        </p>
+                    </div>
+
+                    <!-- RIGHT: Illustration Container -->
+                    <div class="flex-1 w-full flex items-center justify-center">
+                        <div class="relative" style="width: 400px; height: 400px;">
+
+                            <!-- Central Hub - ALWAYS VISIBLE -->
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 120px; height: 120px; background-color: #D97642; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); z-index: 10;">
+                                <svg style="width: 60px; height: 60px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+
+                            <!-- SVG Lines -->
+                            <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" viewBox="0 0 400 400">
+                                <line x1="200" y1="200" x2="200" y2="50" stroke="#D97642" stroke-width="3" stroke-dasharray="8,8"/>
+                                <line x1="200" y1="200" x2="350" y2="200" stroke="#D97642" stroke-width="3" stroke-dasharray="8,8"/>
+                                <line x1="200" y1="200" x2="200" y2="350" stroke="#D97642" stroke-width="3" stroke-dasharray="8,8"/>
+                                <line x1="200" y1="200" x2="50" y2="200" stroke="#D97642" stroke-width="3" stroke-dasharray="8,8"/>
+
+                                <line x1="200" y1="200" x2="310" y2="90" stroke="#D97642" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                                <line x1="200" y1="200" x2="310" y2="310" stroke="#D97642" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                                <line x1="200" y1="200" x2="90" y2="310" stroke="#D97642" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                                <line x1="200" y1="200" x2="90" y2="90" stroke="#D97642" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                            </svg>
+
+                            <!-- Top Device -->
+                            <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 80px; background: white; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(217, 118, 66, 0.2);">
+                                <svg style="width: 40px; height: 40px; color: #D97642;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Right Device -->
+                            <div style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 80px; height: 80px; background: white; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(217, 118, 66, 0.2);">
+                                <svg style="width: 40px; height: 40px; color: #D97642;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Bottom Device -->
+                            <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 80px; background: white; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(217, 118, 66, 0.2);">
+                                <svg style="width: 40px; height: 40px; color: #D97642;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Left Device -->
+                            <div style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 80px; height: 80px; background: white; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(217, 118, 66, 0.2);">
+                                <svg style="width: 40px; height: 40px; color: #D97642;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Top-Right Diagonal -->
+                            <div style="position: absolute; top: 50px; right: 50px; width: 70px; height: 70px; background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(217, 118, 66, 0.15);">
+                                <svg style="width: 35px; height: 35px; color: #D97642;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Bottom-Right Diagonal -->
+                            <div style="position: absolute; bottom: 50px; right: 50px; width: 70px; height: 70px; background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(217, 118, 66, 0.15);">
+                                <svg style="width: 35px; height: 35px; color: #D97642;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Bottom-Left Diagonal -->
+                            <div style="position: absolute; bottom: 50px; left: 50px; width: 70px; height: 70px; background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(217, 118, 66, 0.15);">
+                                <svg style="width: 35px; height: 35px; color: #D97642;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Top-Left Diagonal -->
+                            <div style="position: absolute; top: 50px; left: 50px; width: 70px; height: 70px; background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; border: 2px solid rgba(217, 118, 66, 0.15);">
+                                <svg style="width: 35px; height: 35px; color: #D97642;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Placeholder -->
+        <section class="py-20 bg-bg-primary">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <p class="text-2xl text-text-secondary">Price cards coming next...</p>
+            </div>
+        </section>
+
+    </main>
+</Layout>
