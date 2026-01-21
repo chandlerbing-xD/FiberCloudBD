@@ -43,32 +43,70 @@ import Footer from '../components/Footer.astro';
 		</section>
 
 		<!-- Trust Snapshot Section -->
-		<section class="bg-bg-secondary py-16 md:py-20">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+		<!-- Trust Snapshot Section -->
+		<section class="bg-bg-primary py-16 md:py-20 relative overflow-hidden">
+			<!-- Subtle Background Pattern -->
+			<div class="absolute inset-0 opacity-30">
+				<div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, rgba(217, 118, 66, 0.08) 1px, transparent 0); background-size: 40px 40px;"></div>
+			</div>
 
-					<div class="text-center lg:text-left">
-						<div class="text-4xl md:text-5xl font-bold text-accent mb-3">BTRC</div>
-						<div class="text-base md:text-lg text-text-primary font-semibold mb-1">Licensed ISP</div>
-						<div class="text-sm md:text-base text-text-secondary">Under Mugda Thana</div>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+					<!-- Card 1: BTRC -->
+					<div class="bg-gradient-to-br from-white to-bg-secondary rounded-2xl p-6 border-2 border-accent/20 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+						<div class="flex items-center gap-4 mb-3">
+							<div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+								</svg>
+							</div>
+							<div class="text-4xl font-bold text-accent">BTRC</div>
+						</div>
+						<div class="text-base font-semibold text-text-primary mb-1">Licensed ISP</div>
+						<div class="text-sm text-text-secondary">Under Mugda Thana</div>
 					</div>
 
-					<div class="text-center lg:text-left">
-						<div class="text-4xl md:text-5xl font-bold text-accent mb-3">100%</div>
-						<div class="text-base md:text-lg text-text-primary font-semibold mb-1">Customer Retention</div>
-						<div class="text-sm md:text-base text-text-secondary">Since 2020</div>
+					<!-- Card 2: 100% -->
+					<div class="bg-gradient-to-br from-white to-bg-secondary rounded-2xl p-6 border-2 border-accent/20 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+						<div class="flex items-center gap-4 mb-3">
+							<div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+								</svg>
+							</div>
+							<div class="text-4xl font-bold text-accent">100%</div>
+						</div>
+						<div class="text-base font-semibold text-text-primary mb-1">Customer Retention</div>
+						<div class="text-sm text-text-secondary">Since 2020</div>
 					</div>
 
-					<div class="text-center lg:text-left">
-						<div class="text-4xl md:text-5xl font-bold text-accent mb-3">2020</div>
-						<div class="text-base md:text-lg text-text-primary font-semibold mb-1">Operating Since</div>
-						<div class="text-sm md:text-base text-text-secondary">Maniknagar, Dhaka</div>
+					<!-- Card 3: 2020 -->
+					<div class="bg-gradient-to-br from-white to-bg-secondary rounded-2xl p-6 border-2 border-accent/20 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+						<div class="flex items-center gap-4 mb-3">
+							<div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+								</svg>
+							</div>
+							<div class="text-4xl font-bold text-accent">2020</div>
+						</div>
+						<div class="text-base font-semibold text-text-primary mb-1">Operating Since</div>
+						<div class="text-sm text-text-secondary">Maniknagar, Dhaka</div>
 					</div>
 
-					<div class="text-center lg:text-left">
-						<div class="text-4xl md:text-5xl font-bold text-accent mb-3">Local</div>
-						<div class="text-base md:text-lg text-text-primary font-semibold mb-1">Owned & Operated</div>
-						<div class="text-sm md:text-base text-text-secondary">Family-run business</div>
+					<!-- Card 4: Local -->
+					<div class="bg-gradient-to-br from-white to-bg-secondary rounded-2xl p-6 border-2 border-accent/20 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+						<div class="flex items-center gap-4 mb-3">
+							<div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+								</svg>
+							</div>
+							<div class="text-4xl font-bold text-accent">Local</div>
+						</div>
+						<div class="text-base font-semibold text-text-primary mb-1">Owned & Operated</div>
+						<div class="text-sm text-text-secondary">Family-run business</div>
 					</div>
 
 				</div>
@@ -76,11 +114,17 @@ import Footer from '../components/Footer.astro';
 		</section>
 
 		<!-- Why FiberCloudBD Section -->
-		<section class="bg-bg-primary py-20 md:py-28">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<!-- Why FiberCloudBD Section -->
+		<section class="bg-bg-secondary py-20 md:py-28 relative overflow-hidden">
+			<!-- Subtle Background Pattern -->
+			<div class="absolute inset-0 opacity-20">
+				<div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, rgba(217, 118, 66, 0.08) 1px, transparent 0); background-size: 45px 45px;"></div>
+			</div>
 
-				<div class="text-center mb-16 md:mb-20">
-					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary mb-4">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+				<div class="text-center mb-12 md:mb-16">
+					<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary mb-3">
 						Why FiberCloudBD
 					</h2>
 					<p class="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto">
@@ -88,81 +132,101 @@ import Footer from '../components/Footer.astro';
 					</p>
 				</div>
 
-				<div class="grid md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
+				<div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
 
 					<!-- Reason 1 -->
-					<div class="bg-bg-surface rounded-2xl p-8 hover:shadow-xl transition-shadow">
-						<div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-							</svg>
+					<div class="bg-gradient-to-br from-white via-white to-orange-50/30 rounded-xl p-6 border-2 border-orange-200/40 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+						<div class="flex items-start gap-4">
+							<div class="w-12 h-12 bg-gradient-to-br from-accent/20 to-orange-200/30 rounded-lg flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+								</svg>
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-text-primary mb-2">
+									Instant Customer Support
+								</h3>
+								<p class="text-sm text-text-secondary leading-relaxed">
+									Local technical team — no call-center loops. Real people who respond when you need help.
+								</p>
+							</div>
 						</div>
-						<h3 class="text-2xl md:text-3xl font-bold text-text-primary mb-4">
-							Instant Customer Support
-						</h3>
-						<p class="text-base md:text-lg text-text-secondary leading-relaxed">
-							Local technical team — no call-center loops. Real people who respond when you need help.
-						</p>
 					</div>
 
 					<!-- Reason 2 -->
-					<div class="bg-bg-surface rounded-2xl p-8 hover:shadow-xl transition-shadow">
-						<div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-							</svg>
+					<div class="bg-gradient-to-br from-white via-white to-amber-50/30 rounded-xl p-6 border-2 border-amber-200/40 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+						<div class="flex items-start gap-4">
+							<div class="w-12 h-12 bg-gradient-to-br from-accent/20 to-amber-200/30 rounded-lg flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+								</svg>
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-text-primary mb-2">
+									No Disconnection
+								</h3>
+								<p class="text-sm text-text-secondary leading-relaxed">
+									Consistent high-speed fiber internet designed for uninterrupted service. We own and operate our infrastructure.
+								</p>
+							</div>
 						</div>
-						<h3 class="text-2xl md:text-3xl font-bold text-text-primary mb-4">
-							No Disconnection
-						</h3>
-						<p class="text-base md:text-lg text-text-secondary leading-relaxed">
-							Consistent high-speed fiber internet designed for uninterrupted service. We own and operate our infrastructure.
-						</p>
 					</div>
 
 					<!-- Reason 3 -->
-					<div class="bg-bg-surface rounded-2xl p-8 hover:shadow-xl transition-shadow">
-						<div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-							</svg>
+					<div class="bg-gradient-to-br from-white via-white to-yellow-50/30 rounded-xl p-6 border-2 border-yellow-200/40 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+						<div class="flex items-start gap-4">
+							<div class="w-12 h-12 bg-gradient-to-br from-accent/20 to-yellow-200/30 rounded-lg flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+								</svg>
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-text-primary mb-2">
+									Fast
+								</h3>
+								<p class="text-sm text-text-secondary leading-relaxed">
+									High-speed fiber connectivity built for streaming, work, and online learning without slowdowns.
+								</p>
+							</div>
 						</div>
-						<h3 class="text-2xl md:text-3xl font-bold text-text-primary mb-4">
-							Fast
-						</h3>
-						<p class="text-base md:text-lg text-text-secondary leading-relaxed">
-							High-speed fiber connectivity built for streaming, work, and online learning without slowdowns.
-						</p>
 					</div>
 
 					<!-- Reason 4 -->
-					<div class="bg-bg-surface rounded-2xl p-8 hover:shadow-xl transition-shadow">
-						<div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-							</svg>
+					<div class="bg-gradient-to-br from-white via-white to-orange-50/30 rounded-xl p-6 border-2 border-orange-200/40 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+						<div class="flex items-start gap-4">
+							<div class="w-12 h-12 bg-gradient-to-br from-accent/20 to-orange-200/30 rounded-lg flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+								</svg>
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-text-primary mb-2">
+									Customer Stays
+								</h3>
+								<p class="text-sm text-text-secondary leading-relaxed">
+									Zero churn since 2020. Our customers don't leave because we deliver what we promise, every day.
+								</p>
+							</div>
 						</div>
-						<h3 class="text-2xl md:text-3xl font-bold text-text-primary mb-4">
-							Customer Stays
-						</h3>
-						<p class="text-base md:text-lg text-text-secondary leading-relaxed">
-							Zero churn since 2020. Our customers don't leave because we deliver what we promise, every day.
-						</p>
 					</div>
 
 					<!-- Reason 5 -->
-					<div class="bg-bg-surface rounded-2xl p-8 hover:shadow-xl transition-shadow md:col-span-2 md:max-w-lg md:mx-auto">
-						<div class="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-							</svg>
+					<div class="bg-gradient-to-br from-white via-white to-amber-50/30 rounded-xl p-6 border-2 border-amber-200/40 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 md:col-span-2 md:max-w-2xl md:mx-auto">
+						<div class="flex items-start gap-4">
+							<div class="w-12 h-12 bg-gradient-to-br from-accent/20 to-amber-200/30 rounded-lg flex items-center justify-center flex-shrink-0">
+								<svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+								</svg>
+							</div>
+							<div>
+								<h3 class="text-xl font-bold text-text-primary mb-2">
+									Locally Owned
+								</h3>
+								<p class="text-sm text-text-secondary leading-relaxed">
+									Family-owned and operated with deep roots in the community. Your connection supports local business.
+								</p>
+							</div>
 						</div>
-						<h3 class="text-2xl md:text-3xl font-bold text-text-primary mb-4">
-							Locally Owned
-						</h3>
-						<p class="text-base md:text-lg text-text-secondary leading-relaxed">
-							Family-owned and operated with deep roots in the community. Your connection supports local business.
-						</p>
 					</div>
 
 				</div>
