@@ -39,60 +39,43 @@ import Footer from '../components/Footer.astro';
                     </div>
 
                     <!-- RIGHT: Illustration Container -->
-                    <!-- RIGHT: Illustration Container -->
-                    <div class="flex-1 w-full flex items-center justify-center">
-                        <div class="relative" style="width: 400px; height: 400px;">
+                    <div class="relative w-[380px] h-[300px]">
 
-                            <!-- Central Hub - FiberCloudBD -->
-                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 150px; height: 150px; background-color: #D97642; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); z-index: 10; padding: 1rem;">
-                                <svg style="width: 45px; height: 45px; color: white; margin-bottom: 0.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
-                                <span style="color: white; font-size: 0.85rem; font-weight: 700; text-align: center; line-height: 1.2;">FiberCloudBD</span>
-                                <span style="color: rgba(255,255,255,0.9); font-size: 0.65rem; font-weight: 500; text-align: center; margin-top: 0.25rem;">BTRC Licensed</span>
-                            </div>
+                        <svg viewBox="0 0 400 260" class="w-full h-full">
+                            <!-- arcs -->
+                            <path d="M60 200 A140 140 0 0 1 160 70"
+                                  fill="none" stroke="#F6C27A" stroke-width="18" stroke-linecap="round"/>
+                            <path d="M160 70 A140 140 0 0 1 240 70"
+                                  fill="none" stroke="#D97642" stroke-width="18" stroke-linecap="round"/>
+                            <path d="M240 70 A140 140 0 0 1 340 200"
+                                  fill="none" stroke="#B4532A" stroke-width="18" stroke-linecap="round"/>
 
-                            <!-- SVG Connection Lines - Varied Lengths -->
-                            <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;" viewBox="0 0 400 400">
-                                <!-- Top-Left: Maniknagar (shorter line) -->
-                                <line x1="200" y1="200" x2="95" y2="105" stroke="#D97642" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.7"/>
+                            <!-- needle -->
+                            <line x1="200" y1="200" x2="265" y2="115"
+                                  stroke="#2D2D2D" stroke-width="4" stroke-linecap="round"/>
+                            <circle cx="200" cy="200" r="6" fill="#2D2D2D"/>
+                        </svg>
 
-                                <!-- Top-Right: Mugda (medium line) -->
-                                <line x1="200" y1="200" x2="320" y2="80" stroke="#D97642" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.7"/>
-
-                                <!-- Bottom-Right: Manda (longer line) -->
-                                <line x1="200" y1="200" x2="330" y2="310" stroke="#D97642" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.7"/>
-
-                                <!-- Bottom-Left: Uttar Manda (medium-short line) -->
-                                <line x1="200" y1="200" x2="85" y2="295" stroke="#D97642" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.7"/>
-                            </svg>
-
-                            <!-- Top-Left: Maniknagar - Ward 7 -->
-                            <div style="position: absolute; top: 55px; left: 20px; width: 100px; background: white; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.12); padding: 0.875rem; text-align: center; border: 2px solid rgba(217, 118, 66, 0.25);">
-                                <div style="font-size: 0.875rem; font-weight: 700; color: #2D2D2D; margin-bottom: 0.25rem;">Maniknagar</div>
-                                <div style="font-size: 0.7rem; color: #D97642; font-weight: 600;">Ward 7</div>
-                            </div>
-
-                            <!-- Top-Right: Mugda - Ward 6 -->
-                            <div style="position: absolute; top: 25px; right: 15px; width: 100px; background: white; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.12); padding: 0.875rem; text-align: center; border: 2px solid rgba(217, 118, 66, 0.25);">
-                                <div style="font-size: 0.875rem; font-weight: 700; color: #2D2D2D; margin-bottom: 0.25rem;">Mugda</div>
-                                <div style="font-size: 0.7rem; color: #D97642; font-weight: 600;">Ward 6</div>
-                            </div>
-
-                            <!-- Bottom-Right: Manda - Ward 71 -->
-                            <div style="position: absolute; bottom: 15px; right: 5px; width: 100px; background: white; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.12); padding: 0.875rem; text-align: center; border: 2px solid rgba(217, 118, 66, 0.25);">
-                                <div style="font-size: 0.875rem; font-weight: 700; color: #2D2D2D; margin-bottom: 0.25rem;">Manda</div>
-                                <div style="font-size: 0.7rem; color: #D97642; font-weight: 600;">Ward 71</div>
-                            </div>
-
-                            <!-- Bottom-Left: Uttar Manda - Ward 72 -->
-                            <div style="position: absolute; bottom: 40px; left: 10px; width: 100px; background: white; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.12); padding: 0.875rem; text-align: center; border: 2px solid rgba(217, 118, 66, 0.25);">
-                                <div style="font-size: 0.875rem; font-weight: 700; color: #2D2D2D; margin-bottom: 0.25rem;">Uttar Manda</div>
-                                <div style="font-size: 0.7rem; color: #D97642; font-weight: 600;">Ward 72</div>
-                            </div>
-
+                        <!-- STUDENT -->
+                        <div class="absolute left-[10px] bottom-[20px] text-center w-[100px]">
+                            <div class="text-sm font-bold">30 Mbps</div>
+                            <div class="text-[11px] text-gray-500">Students & Individuals</div>
                         </div>
+
+                        <!-- FAMILY -->
+                        <div class="absolute left-1/2 -translate-x-1/2 top-[8px] text-center w-[120px]">
+                            <div class="text-sm font-bold">50 Mbps</div>
+                            <div class="text-[11px] text-gray-500">Family Use</div>
+                        </div>
+
+                        <!-- GAMER -->
+                        <div class="absolute right-[10px] bottom-[20px] text-center w-[100px]">
+                            <div class="text-sm font-bold">100 Mbps</div>
+                            <div class="text-[11px] text-gray-500">Gaming & Streaming</div>
+                        </div>
+
                     </div>
+
 
                 </div>
             </div>
