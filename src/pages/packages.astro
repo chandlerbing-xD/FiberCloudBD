@@ -36,6 +36,24 @@ import Footer from '../components/Footer.astro';
                         <p class="text-base md:text-lg lg:text-xl text-gray-700 font-medium leading-relaxed">
                         Fast, stable, and affordable broadband designed for homes, professionals, and enterprises across Bangladesh.
                         </p>
+                        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                            <!-- Home Plans -->
+                            <a
+                                    href="#home-plans"
+                                    class="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-accent text-white font-semibold text-base hover:bg-accent-hover transition shadow-md"
+                            >
+                                Home Plans
+                            </a>
+
+                            <!-- Business Plans -->
+                            <a
+                                    href="#business-plans"
+                                    class="inline-flex items-center justify-center px-8 py-4 rounded-lg border-2 border-accent text-accent font-semibold text-base hover:bg-accent hover:text-white transition"
+                            >
+                                Custom Plans for Business
+                            </a>
+                        </div>
+
                     </div>
 
                     <!-- RIGHT: Illustration Container -->
@@ -83,7 +101,7 @@ import Footer from '../components/Footer.astro';
 
         <!-- Placeholder -->
         <!-- Pricing Cards Section - REPLACE THE PLACEHOLDER WITH THIS -->
-        <section class="py-20 bg-bg-primary">
+        <section id="home-plans" class="py-20 bg-bg-primary">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <!-- Section Header -->
@@ -305,7 +323,7 @@ import Footer from '../components/Footer.astro';
                 <div class="mb-12"></div>
 
                 <!-- Business / Corporate Card - Vertical Style -->
-                <div class="max-w-2xl mx-auto">
+                <div id="business-plans" class="max-w-2xl mx-auto">
                     <div style="background: white; border-radius: 1rem; padding: 2rem; border: 2px solid rgba(217, 118, 66, 0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
 
                         <!-- Icon -->
