@@ -36,6 +36,32 @@ import Footer from '../components/Footer.astro';
                         <p class="text-base md:text-lg lg:text-xl text-gray-700 font-medium leading-relaxed">
                         Fast, stable, and affordable broadband designed for homes, professionals, and enterprises across Bangladesh.
                         </p>
+                        <!-- CTA Buttons -->
+                        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+
+                            <!-- Home Plans -->
+                            <a href="#anchor"
+                               class="inline-flex items-center justify-center
+            rounded-xl bg-accent px-6 py-3
+            text-sm font-semibold text-white
+            shadow-md transition
+            hover:bg-accent/90">
+                                View Home Plans
+                            </a>
+
+                            <!-- Business / Custom -->
+                            <a href="#business"
+                               class="inline-flex items-center justify-center
+            rounded-xl border border-accent
+            px-6 py-3 text-sm font-semibold
+            text-accent bg-white
+            transition hover:bg-accent hover:text-white">
+                                Custom Plans for Business
+                                & Corporate
+                            </a>
+
+                        </div>
+
                     </div>
 
                     <!-- RIGHT: Illustration Container -->
@@ -58,19 +84,19 @@ import Footer from '../components/Footer.astro';
 
                         <!-- STUDENT -->
                         <div class="absolute left-[10px] bottom-[20px] text-center w-[100px]">
-                            <div class="text-sm font-bold">30 Mbps</div>
+                            <div class="text-sm font-bold">20 Mbps</div>
                             <div class="text-[11px] text-gray-500">Students & Individuals</div>
                         </div>
 
                         <!-- FAMILY -->
                         <div class="absolute left-1/2 -translate-x-1/2 top-[8px] text-center w-[120px]">
-                            <div class="text-sm font-bold">50 Mbps</div>
+                            <div class="text-sm font-bold">30 Mbps</div>
                             <div class="text-[11px] text-gray-500">Family Use</div>
                         </div>
 
                         <!-- GAMER -->
                         <div class="absolute right-[10px] bottom-[20px] text-center w-[100px]">
-                            <div class="text-sm font-bold">100 Mbps</div>
+                            <div class="text-sm font-bold">40 Mbps</div>
                             <div class="text-[11px] text-gray-500">Gaming & Streaming</div>
                         </div>
 
@@ -81,8 +107,7 @@ import Footer from '../components/Footer.astro';
             </div>
         </section>
 
-        <!-- Placeholder -->
-        <!-- Pricing Cards Section - REPLACE THE PLACEHOLDER WITH THIS -->
+        <!-- Pricing Cards Section -->
         <section class="py-20 bg-bg-primary">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -95,7 +120,8 @@ import Footer from '../components/Footer.astro';
                         All plans include unlimited data, optimized routing, and 24/7 local support.
                     </p>
                 </div>
-
+                <section id="anchor">
+                    <div class="container py-16">
                 <!-- Pricing Cards Grid - Using inline styles for guaranteed layout -->
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 320px)); gap: 1.5rem; justify-content: center; margin-bottom: 3rem;">
 
@@ -285,7 +311,8 @@ import Footer from '../components/Footer.astro';
                     </div>
 
                 </div>
-
+                    </div>
+                </section>
                 <!-- Single CTA for Residential Plans -->
                 <div class="text-center mb-16">
                     <a
@@ -303,7 +330,8 @@ import Footer from '../components/Footer.astro';
 
                 <!-- Spacing Before Business Card -->
                 <div class="mb-12"></div>
-
+                <section id="business">
+                    <div class="container py-16">
                 <!-- Business / Corporate Card - Vertical Style -->
                 <div class="max-w-2xl mx-auto">
                     <div style="background: white; border-radius: 1rem; padding: 2rem; border: 2px solid rgba(217, 118, 66, 0.3); box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
@@ -382,7 +410,8 @@ import Footer from '../components/Footer.astro';
                                 Our team will design a solution for your business.
                             </p>
                         </div>
-
+                    </div>
+                </section>
                     </div>
                 </div>
 
