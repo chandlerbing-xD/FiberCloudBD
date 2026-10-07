@@ -9,13 +9,33 @@ import Footer from '../components/Footer.astro';
 
 	<main>
 		<!-- Hero Section -->
-		<section class="relative h-screen min-h-[600px] flex items-center">
-			<div class="absolute inset-0 z-0">
-				<img src="/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="Fiber Internet" class="w-full h-full object-cover object-center" style="object-position: center 75%;" />
-				<div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/35 to-black/15"></div>
+		<!-- Hero Section -->
+		<section class="relative h-screen min-h-[600px] flex items-center isolate">
+			<!-- Background slider -->
+			<div class="absolute inset-0 z-0 overflow-hidden">
+				<img
+					src="/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
+					class="hero-bg absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
+					style="object-position: center 75%;"
+					alt=""
+				/>
+				<img
+					src="/hero-bg1.jpg"
+					class="hero-bg absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+					alt=""
+				/>
+				<img
+					src="/sigmund-eTgMFFzroGc-unsplash.jpg"
+					class="hero-bg absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+					alt=""
+				/>
+
+				<!-- Gradient overlay -->
+				<div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/35 to-black/15 z-10 pointer-events-none"></div>
 			</div>
 
-			<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+			<!-- Content -->
+			<div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
 				<div class="max-w-3xl">
 					<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight text-white">
 						Reliable Internet. Real Support.
@@ -41,6 +61,7 @@ import Footer from '../components/Footer.astro';
 				</div>
 			</div>
 		</section>
+
 
 		<!-- Trust Snapshot Section -->
 		<!-- Trust Snapshot Section -->
@@ -235,5 +256,19 @@ import Footer from '../components/Footer.astro';
 
 	</main>
 	<Footer />
+	<script>
+		const images = document.querySelectorAll('.hero-bg');
+		let current = 0;
+
+		setInterval(() => {
+			images[current].classList.remove('opacity-100');
+			images[current].classList.add('opacity-0');
+
+			current = (current + 1) % images.length;
+
+			images[current].classList.remove('opacity-0');
+			images[current].classList.add('opacity-100');
+		}, 3500);
+	</script>
 
 </Layout>
